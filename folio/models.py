@@ -8,11 +8,11 @@ class Profile(models.Model):
     name = models.CharField(max_length=30)
     bio = models.TextField()
     phone_number = models.IntegerField(blank=True)
-    profile_pic = models.ImageField(upload_to='pictures/',default='kent.jpg')
+    profile_pic = models.ImageField(upload_to='pictures/', default='kent.jpg')
     email = models.EmailField()
 
     def __str__(self):
-        return self.name
+        return f'{self.users.username} profile'
 
 
 class Project(models.Model):
@@ -28,14 +28,20 @@ class Project(models.Model):
     def delete_project(self):
         self.delete()
 
+    @classmethod
+    def get_project(cls):
+        proj = Project.objects.all()
+        print(proj)
+        return proj
+
     def __str__(self):
         return self.title
 
 
 class Rating(models.Model):
-    design = models.IntegerField(max_length=30, default=0)
-    usability = models.IntegerField(max_length=30, default=0)
-    content = models.IntegerField(max_length=30, default=0)
+    design = models.IntegerField(default=0)
+    usability = models.IntegerField(default=0)
+    content = models.IntegerField(default=0)
     project = models.ForeignKey(Project)
 
     def __str__(self):
