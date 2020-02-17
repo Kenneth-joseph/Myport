@@ -1,10 +1,11 @@
-<nav class="navbar navbar-dark bg-dark justify-content-between fixed-top  scrolling-navbar">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <form class="form-inline my-1">
+<nav class="navbar navbar-dark bg-dark justify-content-between">
+  <a class="navbar-brand" href="{%url 'home'%}"><i class="fas fa-star-half">Rate</i></a>
+
+  <form class="form-inline" action ="{%url 'search_results'%}" role="search">
     <div class="md-form form-sm my-0">
-      <input class="form-control form-control-sm mr-sm-2 mb-0" type="text" placeholder="Search"
+      <input class="form-control form-control-sm mr-sm-2 mb-0" type="text" placeholder="Search Project" name="project"
         aria-label="Search">
     </div>
-    <button class="btn btn-outline-white btn-sm my-0" type="submit">Search</button>
   </form>
+<a href="#"><i class="fas fa-sign-in-alt" style="color:white">&nbsp;Log in</i></a>
 </nav>

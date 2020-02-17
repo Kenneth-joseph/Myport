@@ -1,0 +1,32 @@
+{% extends 'base.html'%}
+{%block content%}
+<main class=" py-5">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-lg-12 col-sm-12">
+         {%if projects%}
+          <div class="results text-center">
+              <h3>Found {{projects|length}} of searched term {{message}}</h3>
+            {%else%}
+            <h3> Found 0 projects  for the searched term {{message}}</h3>
+          </div>
+            {%endif%}
+        </div>
+      </div>
+      <!--end of row one-->
+      <div class="row">
+         {% if projects%}
+            {% for project in projects%}
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="proj text-center">
+                <h2>{{project.title}}</h2>
+            </div>
+        </div>
+        {%endfor%}
+        {%endif%}
+    </div>
+    </div>
+
+</main>
+{%endblock%}

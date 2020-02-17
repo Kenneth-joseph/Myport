@@ -34,6 +34,11 @@ class Project(models.Model):
         print(proj)
         return proj
 
+    @classmethod
+    def search_by_title(cls, search_term):
+        work = cls.objects.filter(title__icontains=search_term)
+        return work
+
     def __str__(self):
         return self.title
 

@@ -1,10 +1,18 @@
-p{
-color:blue;
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+
+.welcome
+{
+color:white;
+height:70vh
 }
 
-welcome .
-{
-    background-color:black;
-    height: 80vh;
-    color:white;
+.one{
+padding-top:270px;
 }
+.info{
+font-family: 'Press Start 2P', cursive;
+font-size:20px
+}
+.head{
+font-family: 'Abril Fatface', cursive;}
