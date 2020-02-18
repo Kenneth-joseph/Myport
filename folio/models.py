@@ -32,7 +32,6 @@ class Project(models.Model):
     @classmethod
     def get_project(cls):
         proj = Project.objects.all()
-        print(proj)
         return proj
 
     @classmethod

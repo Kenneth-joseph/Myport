@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c03dbd17-b75f-4e86-ab4e-472be3b243c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/folio/templates/new_project.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/folio/templates/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/award/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/award/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/folio/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/folio/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/folio/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/folio/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/folio/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/folio/templates/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/folio/templates/new_project.html" beforeDir="false" afterPath="$PROJECT_DIR$/folio/templates/new_project.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/folio/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/folio/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,9 +67,9 @@
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
     <state x="0" y="167" width="1022" height="737" key="SettingsEditor/0.27.1920.1010@0.27.1920.1010" timestamp="1581791311355" />
-    <state x="136" y="359" key="com.intellij.ide.util.TipDialog" timestamp="1582016032958">
+    <state x="136" y="359" key="com.intellij.ide.util.TipDialog" timestamp="1582026867086">
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
-    <state x="136" y="359" key="com.intellij.ide.util.TipDialog/0.27.1920.1010@0.27.1920.1010" timestamp="1582016032958" />
+    <state x="136" y="359" key="com.intellij.ide.util.TipDialog/0.27.1920.1010@0.27.1920.1010" timestamp="1582026867086" />
   </component>
 </project>
