@@ -36,3 +36,8 @@ def new_project(request):
     else:
         form = NewProjectForm
     return render(request, 'new_project.html', {"form": form})
+
+
+@login_required(login_url='/accounts/login/')
+def profile(request):
+    return render(request , 'profile.html')

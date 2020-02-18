@@ -1,4 +1,38 @@
 {% extends 'base.html'%}
-{%content block%}
+{%block content%}
+<!-- Card -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
 
+            <div class="card testimonial-card profile">
+
+  <!-- Background color -->
+  <div class="card-up indigo lighten-1"></div>
+
+  <!-- Avatar -->
+  <div class="avatar mx-auto white">
+    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle"
+      alt="woman avatar">
+  </div>
+<hr>
+  <!-- Content -->
+  <div class="card-body">
+    <!-- Name -->
+    <h4 class="card-title">{{user.username}}</h4>
+       <p class="card-title colo">{{user.email}}</p>
+    <hr>
+    <!-- Quotation -->
+    <p><i class="fas fa-quote-left"></i> {{user.bio}}
+    </p>
+  </div>
+
+</div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+
+<!-- Card -->
 {%endblock%}
