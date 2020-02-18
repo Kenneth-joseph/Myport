@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'folio.apps.FolioConfig',
     'bootstrap4',
+    'tinymce',
 
 ]
 
