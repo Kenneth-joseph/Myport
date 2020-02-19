@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import Http404, HttpRequest, HttpResponse
 from .models import Project, Profile, Rating
-from .forms import NewProjectForm,UpdateUserForm,ProfileUpdateForm
+from .forms import NewProjectForm, UpdateUserForm, ProfileUpdateForm
 from django.contrib.auth.decorators import login_required
 
 
@@ -40,7 +40,7 @@ def new_project(request):
 
 @login_required(login_url='/accounts/login/')
 def profile(request):
-    return render(request , 'profile.html')
+    return render(request, 'profile.html')
 
 
 @login_required(login_url='/accounts/login/')
@@ -48,4 +48,8 @@ def update_profile(request):
     u_form = UpdateUserForm()
     p_form = ProfileUpdateForm()
 
-    return render(request, 'update_profile.html')
+    context = {
+        'u_form': u_form,
+        'p_form': p_form
+    }
+    return render(request, 'update_profile.html', context)

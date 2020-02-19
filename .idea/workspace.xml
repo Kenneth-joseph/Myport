@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c03dbd17-b75f-4e86-ab4e-472be3b243c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/folio/migrations/0011_remove_profile_name.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/folio/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/folio/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/folio/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/folio/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/folio/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/folio/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/folio/templates/update_profile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
