@@ -13,7 +13,7 @@ class Profile(models.Model):
     email = models.EmailField()
 
     def __str__(self):
-        return f'{self.users.username} profile'
+        return f'{self.user.username} profile'
 
 
 class Project(models.Model):
