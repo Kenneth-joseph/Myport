@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c03dbd17-b75f-4e86-ab4e-472be3b243c8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/folio/migrations/0011_remove_profile_name.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/folio/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/folio/templates/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/folio/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/folio/templates/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/folio/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/folio/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/folio/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/folio/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/folio/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/folio/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,9 +64,9 @@
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
     <state x="0" y="167" width="1022" height="737" key="SettingsEditor/0.27.1920.1010@0.27.1920.1010" timestamp="1581791311355" />
-    <state x="136" y="359" key="com.intellij.ide.util.TipDialog" timestamp="1582048345303">
+    <state x="136" y="359" key="com.intellij.ide.util.TipDialog" timestamp="1582102341268">
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
-    <state x="136" y="359" key="com.intellij.ide.util.TipDialog/0.27.1920.1010@0.27.1920.1010" timestamp="1582048345303" />
+    <state x="136" y="359" key="com.intellij.ide.util.TipDialog/0.27.1920.1010@0.27.1920.1010" timestamp="1582102341268" />
   </component>
 </project>

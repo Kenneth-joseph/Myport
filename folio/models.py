@@ -6,7 +6,6 @@ from tinymce.models import HTMLField
 
 class Profile(models.Model):
     users = models.OneToOneField(User, on_delete=models.CASCADE)
-    name = models.CharField(max_length=30)
     bio = models.TextField()
     phone_number = models.IntegerField(blank=True)
     profile_pic = models.ImageField(upload_to='pictures/', default='kent.jpg')
