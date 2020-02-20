@@ -2,17 +2,23 @@ from django.db import models
 import datetime as dt
 from django.contrib.auth.models import User
 from tinymce.models import HTMLField
+from django.db.models.signals import post_save
 
 
 class Profile(models.Model):
-    users = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
     bio = models.TextField()
-    phone_number = models.IntegerField(blank=True)
+    phone_number = models.IntegerField(blank=True, null=True)
     profile_pic = models.ImageField(upload_to='pictures/', default='kent.jpg')
     email = models.EmailField()
 
+    def create_profile(sender, **kwargs):
+        if kwargs['created']:
+            profile= Profile.objects.create(user=kwargs['instance'])
+    post_save.connect(create_profile, sender=User)
+
     def __str__(self):
-        return f'{self.user.username} profile'
+        return f'{self.user.username} Profile'
 
 
 class Project(models.Model):
@@ -20,7 +26,7 @@ class Project(models.Model):
     description = HTMLField()
     project_link = models.CharField(max_length=100)
     profile = models.ForeignKey(User, on_delete=models.CASCADE)
-    project_pic = models.ImageField(upload_to='pictures/', default='kent.jpg')
+    project_pic = models.ImageField(upload_to='pictures/', default='one.jpg')
 
     def save_project(self):
         self.save()

@@ -1,4 +1,5 @@
 {% extends 'base.html'%}
+{%load static%}
 {%block content%}
 <!-- Card -->
 <div class="container">
@@ -12,20 +13,28 @@
   <div class="card-up indigo lighten-1"></div>
 
   <!-- Avatar -->
-  <div class="avatar mx-auto white">
-    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle"
-      alt="woman avatar">
+
+  <div class="avatar mx-auto white mt-1">
+       {%if user.profile%}
+   <img src="{{user.profile.profile_pic.url}}" class="rounded-circle" alt="profile pic">
+      {%else%}
+      <img src="{%static 'images/kent.jpg'%}" class="rounded-circle" alt="profile pic">
+      {%endif%}
   </div>
+
 <hr>
   <!-- Content -->
   <div class="card-body">
     <!-- Name -->
     <h4 class="card-title">{{user.username}}</h4>
-       <p class="card-title colo">{{user.email}}</p>
+       <p class="card-title colo text-muted font-weight-light">{{user.email}}</p>
+      <p class="card-title colo text-muted font-weight-light">{{user.profile.phone_number}}</p>
     <hr>
     <!-- Quotation -->
-    <p><i class="fas fa-quote-left"></i> {{user.bio}}
+    <p >Bio: &nbsp; {{user.profile.bio}}
     </p>
+      <a href="{%url 'update_profile'%}"><button type="button" class="btn btn-success" style="float:right">Update Profile</button>
+</a>
   </div>
 
 </div>

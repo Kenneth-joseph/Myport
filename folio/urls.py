@@ -7,7 +7,8 @@ urlpatterns = [
     url(r'^$', views.home, name='home'),
     url(r'^search/', views.search_results, name='search_results'),
     url(r'^new/project$', views.new_project, name='new_project'),
-    url(r'^accounts/profile/$', views.profile, name='profile')
+    url(r'^accounts/profile/$', views.profile, name='profile'),
+    url(r'^accounts/profile/update$', views.update_profile, name='update_profile')
 
 ]
 

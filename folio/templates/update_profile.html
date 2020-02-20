@@ -1,10 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{%load crispy_forms_tags %}
+{% block content%}
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+                <!-- Card -->
+<div class="card three">
 
-</body>
-</html>
+  <!-- Card body -->
+  <div class="card-body">
+    <form method="post" enctype="multipart/form-data" class="uniForm">
+        <p class="h4 text-center py-4">Update Your Profile</p>
+      {% csrf_token %}
+        {{ u_form|crispy}}
+        {{ p_form|crispy}}
+      <div class="form-group">
+        <button class="btn btn-outline-info" type="submit">Update
+        </button>
+      </div>
+    </form>
+
+  </div>
+  <!-- Card body -->
+
+</div>
+<!-- Card -->
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+{%endblock%}

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'folio.apps.FolioConfig',
     'bootstrap4',
     'tinymce',
+    'crispy_forms',
 
 ]
 
@@ -145,5 +146,8 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # defining image route
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# crispy set-up
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 django_heroku.settings(locals())

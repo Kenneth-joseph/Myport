@@ -9,6 +9,7 @@ class NewProjectForm(forms.ModelForm):
         model = Project
         exclude = ['profile']
 
+
 class UpdateUserForm(forms.ModelForm):
     email = forms.EmailField()
 
@@ -16,8 +17,8 @@ class UpdateUserForm(forms.ModelForm):
         model = User
         fields = ['username', 'email']
 
+
 class ProfileUpdateForm(forms.ModelForm):
     class Meta:
         model = Profile
-        fields = ['bio','phone_number','profile_pic']
-  
+        fields = ['bio', 'phone_number', 'profile_pic']
