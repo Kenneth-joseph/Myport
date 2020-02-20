@@ -13,8 +13,8 @@ class Profile(models.Model):
     profile_pic = models.ImageField(upload_to='pictures/', default='kent.jpg')
     email = models.EmailField()
 
-    def save(self):
-        super().save()
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
         img= Image.open(self.profile_pic.path)
         if img.height > 250 or img.width > 180:
             output_size = (220,150)
