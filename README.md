@@ -7,9 +7,14 @@
 ## Screenshots
 > **Visual presentation of my work**
  >>##### Landing page
-![this shows the top page](static/images/one.png)
- >>##### Search 
-![this shows the top page](static/images/two.png)
+![this shows the top page](static/images/home2.png)
+ >>##### project
+![this shows the top page](static/images/home.png)
+ >>##### search
+![this shows the top page](static/images/search.png)
+>>##### profile
+![this shows the top page](static/images/prof.png)
+
 
  ## Description
 >
@@ -30,6 +35,8 @@
  - Django
  - Postgresql Database
 
+## Note
+> the above project is still under development quite a number of functionalities aren't in place yet and ass functional as planned but will be soon enough
  ## Contact me
  > To contact me please call this number : 0708037786
 
