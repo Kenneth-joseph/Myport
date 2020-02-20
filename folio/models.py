@@ -3,6 +3,7 @@ import datetime as dt
 from django.contrib.auth.models import User
 from tinymce.models import HTMLField
 from django.db.models.signals import post_save
+from PIL import Image
 
 
 class Profile(models.Model):
@@ -12,9 +13,19 @@ class Profile(models.Model):
     profile_pic = models.ImageField(upload_to='pictures/', default='kent.jpg')
     email = models.EmailField()
 
+    def save(self):
+        super().save()
+        img= Image.open(self.profile_pic.path)
+        if img.height > 250 or img.width > 180:
+            output_size = (220,150)
+            img.thumbnail(output_size)
+            img.save(self.profile_pic.path)
+
+
     def create_profile(sender, **kwargs):
         if kwargs['created']:
-            profile= Profile.objects.create(user=kwargs['instance'])
+            profile = Profile.objects.create(user=kwargs['instance'])
+
     post_save.connect(create_profile, sender=User)
 
     def __str__(self):

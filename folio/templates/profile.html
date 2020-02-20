@@ -14,9 +14,9 @@
 
   <!-- Avatar -->
 
-  <div class="avatar mx-auto white mt-1">
+  <div class="avatar mx-auto white mt-3">
        {%if user.profile%}
-   <img src="{{user.profile.profile_pic.url}}" class="rounded-circle" alt="profile pic">
+   <img src="{{user.profile.profile_pic.url}}"  alt="profile pic" class="rounded-circle" >
       {%else%}
       <img src="{%static 'images/kent.jpg'%}" class="rounded-circle" alt="profile pic">
       {%endif%}
