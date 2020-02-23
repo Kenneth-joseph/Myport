@@ -4,11 +4,12 @@
 .welcome
 {
 color:white;
-height:70vh
+/* height:50vh */
 }
 
 .one{
-padding-top:270px;
+padding-top:240px;
+padding-bottom:70px;
 }
 .info{
 font-family: 'Press Start 2P', cursive;
